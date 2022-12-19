@@ -11,7 +11,8 @@ router.use('/user',userRouter)
 router.use('/team',teamRouter)
 router.use('/task',taskRouter)
 
-router.get('/',(req, res) => {
+router.post('/',(req, res) => {
+    console.log(req)
     res.json({
         success: true,
         source: 'main router'

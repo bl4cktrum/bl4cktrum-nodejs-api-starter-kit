@@ -12,7 +12,9 @@ router.use('/team',teamRouter)
 router.use('/task',taskRouter)
 
 router.post('/',(req, res) => {
-    console.log(req)
+    let request = req.body;
+    console.log(request)
+
     res.json({
         success: true,
         source: 'main router'

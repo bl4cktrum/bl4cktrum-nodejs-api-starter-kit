@@ -10,13 +10,3 @@ router.use('/auth',authRouter)
 router.use('/user',userRouter)
 router.use('/team',teamRouter)
 router.use('/task',taskRouter)
-
-router.post('/',(req, res) => {
-    let request = req.body;
-    console.log(request)
-
-    res.json({
-        success: true,
-        source: 'main router'
-    })
-});

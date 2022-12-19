@@ -1,7 +1,6 @@
 import express from "express";
+import Task from "../controllers/task";
 
 export const taskRouter = express.Router();
 
-taskRouter.get('/',(req, res) => {
-    res.send('task main router')
-})
+taskRouter.get('/',Task.getAllTasks)

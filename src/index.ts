@@ -7,12 +7,6 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
-const prisma = new PrismaClient()
-
-// prisma.user.findMany().then(users => {
-//     console.log(users);
-// })
-
 // Router Middleware
 app.use(`/api/${process.env.API_VERSION}`,router)
 

@@ -4,8 +4,6 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "prisma-pull-db-Y": "dotenv -e environments/development.env prisma db pull",
-    "prisma-generate": "prisma generate",
     "predev": "npm run build",
     "dev": "concurrently \"tsc -w\" \"nodemon dist/index.js\"",
     "prebuild": "rimraf dist",
